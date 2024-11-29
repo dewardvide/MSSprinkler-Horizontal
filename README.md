@@ -1,26 +1,10 @@
-
-
-
-
-
-<div align="center">
-
-  <a href="">[![Made with - PowerShell](https://img.shields.io/badge/Made_with-PowerShell-blue)](https://github.com/theresafewconors/mssprinkler)</a>
-  <a href="">[![License - MIT](https://img.shields.io/badge/License-MIT-yellow)](https://github.com/theresafewconors/mssprinkler)</a>
-  <a href="">[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Ftheresafewconors%2Fmssprinkler&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://github.com/theresafewconors/mssprinkler)</a>
-  <a href="">[![Current Version](https://img.shields.io/badge/Current_Version-0.2-lightblue)](https://github.com/theresafewconors/mssprinkler)</a>
-
-</div>
-
-
-<p align="center"><a href="https://www.cybermaxx.com/?utm_source=github&utm_medium=githublink&utm_campaign=mssprinkler&utm_id=github"><img src="images/cybermaxx_logo.png"></img></a></p>
-MSSprinkler is sponsored by CyberMaxx.
-
-
-
 # Overview
 
 MSSprinkler is a password spraying utility for organizations to test their Microsoft Online accounts from an external perspective. It employs a 'low-and-slow' approach to avoid locking out accounts, and provides verbose information related to accounts and tenant information. 
+
+# What changed in this fork of MSSprinkler?
+
+I modified the script to run a more evasive horizontal attack i.e., trying one password on many accounts before moving to the next password as opposed to the original script which runs a veritcal attack i.e., trying many passwords on one account before moving to the next account. The script has been renamed to mssprinklerV.ps1 and Invoke-MSSprinklerV is used to to invoke the script. 
 
 ## Contents
 - [Description](#description)
