@@ -48,17 +48,17 @@ MSSprinkler is written in PowerShell and can be imported directly as a module. I
 ## Install and Usage
 ```PowerShell
 # Import the module
-Import-Module MSSprinkler.ps1
+Import-Module mssprinklerV.ps1
 
 # Use the module
-Invoke-MSSprinkler 
+Invoke-MSSprinklerV 
 
 # EXAMPLE USAGE
 # Spray using a provided userlist and password list, default URL and threshold
-Invoke-MSSprinkler -user userlist.txt -pass passwordlist.txt
+Invoke-MSSprinklerV -user userlist.txt -pass passwordlist.txt
 
 # Spray using a provided userlist and password list, increase threshold to 12 attempts per min and output results to output.csv
-Invoke-MSSprinkler -user userlist.txt -pass passwordlist.txt -threshold 12 -output .\output.csv
+Invoke-MSSprinklerV -user userlist.txt -pass passwordlist.txt -threshold 12 -output .\output.csv
 ```
 
 ## Help
@@ -80,7 +80,7 @@ password10
 
 Additional help can be viewed within the tool via PowerShells built-in module:
 ```PowerShell
-Get-Help .\mssprinkler.ps1 -detailed
+Get-Help .\mssprinklerV.ps1 -detailed
 ```
 
 Timestamps in the output file are in UTC timezone with the applicable offset for the local user, eg for 2:11pm local time:
